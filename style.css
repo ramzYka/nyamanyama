@@ -1,0 +1,719 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+nav {
+    transform: translateY(-150%);
+    animation: ani 0.7s forwards;  
+}
+
+@keyframes ani {
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+
+body {
+    text-decoration: none;
+    position: relative;
+    background-color: #fff;
+}
+
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/* header */
+
+
+.header {
+    background-color: #fff;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 34px 23px 31px -22px rgba(34, 60, 80, 0.22);
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation-items {
+    font-family: "Jura", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-el {
+  color:#000000;  
+  transition: all 0.2s ease-in-out;
+  padding: 17px 0px;
+}
+
+.nav-el:hover {
+    color: #e0ad4a;
+    border-top: 5px solid #e0ad4a;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #4671D5;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e0ad4a;
+}
+
+/* main */
+
+.arrow {
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    padding-top: 70px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    animation: about-animation 2.5s forwards;
+}
+
+@keyframes about-animation {
+    0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-h1__el {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.selected {
+    color: #4671D5;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+}
+
+.about-text {
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+
+.block-img {
+    display: flex;
+    align-items: center;
+}
+
+.block-img__el {
+    width: 600px;
+    height: 400px;
+}
+
+.about-button {
+    padding-top: 84px;
+}
+
+.about-btn__el {
+    padding: 10px 40px;
+    border-radius: 0px;
+}
+
+/* language */
+
+.language {
+    padding-top: 100px;
+    opacity: 0;
+    animation: about-animation 2.5s forwards;
+}
+
+.language-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 0px;
+}
+
+.language-title__h2-el {
+    text-align: center;
+    font-size: 45px;
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+}
+
+.language-line__el {
+    width: 300px;
+}
+
+.country__p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+/* courses */
+
+.courses {
+    padding-top: 100px;
+}
+
+.courses-cards-h2 {
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 45px;
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__h3 {
+    font-family: "Jura", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.mid-card-side {
+    width: 50%;
+}
+
+.mid-card-side {
+    padding-top: 20px;
+}
+
+.mid-card-side-description__p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.footer-card-side {
+    padding-top:20px;
+}
+
+.footer-card-side-price{
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.price-btn__el {
+    border-radius: 15px;
+}
+
+
+/* teacher */
+
+.teacher {
+    padding-top: 100px;
+}
+
+.teacher-h2 {
+    text-align: center;
+}
+
+.teacher-block-line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.teacher-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.teacher-h2__el {
+    font-size: 45px;
+    font-family: "Jura", sans-serif;
+    font-weight: 600;
+}
+
+.teacher-name {
+    padding: 15px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.teacher-block-line {
+    padding-top: 70px;
+}
+
+
+.teacher-block-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.teacher-card-h3 {
+    padding: 15px 0px;
+}
+
+.teacher-card-h3__el {
+    font-size: 22px;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.teacher-card-img__el {
+    width: 500px;
+    height: 300px;
+    box-shadow: 11px 15px 40px 15px rgba(34, 60, 80, 0.2);
+}
+
+.teacher-card-text {
+    padding-top: 30px;
+}
+
+.teacher-card-text-p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.teacher-card-text-p__el {
+    font-size: 18px;
+    width: 500px;
+}
+
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* feedback */
+
+.feedback {
+    padding-top: 100px;
+}
+
+.feedback-h2 {
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 45px;
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+}
+
+.feedback-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.high-feedback-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.high-feedback-card-name__p {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+.high-feedback-card-time__p {
+    font-size: 14px;
+    color: rgb(156, 155, 155);
+}
+
+.low-feedback-text {
+    width: 50%;
+    padding-top: 20px;
+}
+
+.low-feedback-text__p {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* form */
+
+.form {
+    padding: 100px 0px;
+}
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-block-header-h2__el {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Jura", sans-serif;
+}
+
+.form-block-middle {
+    margin-top: 30px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-input__el {
+    border: 2px solid #4671D5;
+    padding: 15px 100px 15px 10px;
+    font-size: 30px;
+}
+
+input[type=text]:focus {
+    border: none;
+    outline: 2px solid #e0ad4a; 
+}
+
+.form-button {
+    padding-top: 30px;
+}
+
+.form-btn {
+    padding: 15px 30px;
+}
+
+/* footer */
+
+.footer {
+    background-color: #4671D5;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .container {
+        width: 1140px;
+    }
+
+    .navigation-items {
+        font-size: 16px;
+    }
+
+    .button-el .btn{
+        font-size: 16px;
+    }
+
+    .about-h1__el {
+        font-size: 35px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .about-button {
+        padding-top: 38px;
+    }
+
+    .block-img__el {
+        width: 540px;
+        height: 357px;
+    }
+
+    .arrow {
+        padding-top: 90px;
+    }
+
+    .language  {
+        padding-top: 80px;
+    }
+
+    .low-feedback-text__p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+
+    .container {
+        width: 960px;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about  {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .language-title__h2-el {
+        font-size: 35px;
+    }
+
+    .language-line {
+        flex-direction: column;
+    }
+
+    .card__h3 {
+        font-size: 30px;
+    }
+
+    .courses-cards-h2 {
+        font-size: 40px;
+    }
+
+    .low-feedback-text__p {
+        font-size: 16px;
+    }
+    
+    .feedback-h2 {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .container {
+        width: 720px;
+    }
+
+    .about-btn__el {
+        padding: 15px 40px;
+    }
+    
+    .price-btn__el {
+        padding: 15px 40px;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .container {
+        width: 540px;
+    }
+
+    .block-img__el {
+        width: 440px;
+        height: 300px;
+    }
+
+    .about-h1__el {
+        font-size: 25px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+
+    .language-title__h2-el {
+        font-size: 30px;
+    }
+
+    .language-line__el {
+        width: 200px;
+    }
+
+    .card__h3 {
+        font-size: 25px;
+    }
+
+    .mid-card-side-description__p {
+        font-size: 15px;
+    }
+
+    .courses-cards-h2 {
+        font-size: 30px;
+    }
+
+    .teacher-h2__el {
+        font-size: 30px;
+    }
+
+    .teacher-card-text-p__el {
+        font-size: 16px;
+    }
+
+    .teacher-card-img__el  {
+        width: 460px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    main {
+        padding-top: 150px;
+    }
+
+    .container {
+        width: 98%;
+    }
+
+    .header {
+        width: 300px;
+    }
+
+    .navigation-items {
+        padding-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-img__el {
+        width: 300px;
+        height: 200px;
+    }
+
+    .arrow  {
+        padding-top: 140px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .teacher-card {
+        width: 300px;
+        overflow: hidden;
+    }
+
+    .teacher-card-text-p__el {
+        width: 300px;
+    }
+
+    .teacher-card-img__el  {
+        box-shadow: none;
+    }
+
+    .form-block-header-h2__el {
+        font-size: 30px;
+    }
+
+    .form-input__el {
+        padding: 15px 30px 15px 10px;
+        width: 60%;
+    }
+
+    .mid-card-side-description__p {
+        font-size: 13px;
+    }
+
+    .card__h3 {
+        font-size: 25px;
+        text-align: ce;
+    }
+
+    .low-feedback-text__p {
+        font-size: 12px;
+    }
+
+    .footer {
+        height: 10vh;
+    }
+
+    .footer-line {
+        height: 10vh;
+    }
+
+    .footer-logo {
+        display: flex;
+    }
+
+    .logo-el img {
+        width: 250px;
+    }
+
+}
